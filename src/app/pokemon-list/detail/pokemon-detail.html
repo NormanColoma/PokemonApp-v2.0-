@@ -1,0 +1,13 @@
+<div class="panel panel-default" ng-if="!$ctrl.removed">
+  <div class="panel-heading">{{$ctrl.pokemon.name}}</div>
+  <div class="panel-body">
+    <p>{{$ctrl.pokemon.description}}</p>
+    <p><strong>Evolución: </strong>{{$ctrl.pokemon.evolution}}</p>
+    <a href="/#/pokemons/{{$ctrl.id}}/edit" type="button" class="btn btn-default">Editar</a>
+    <input type="button" value="Eliminar" class="btn btn-default" ng-click="$ctrl.removePokemon($ctrl.pokemon._links.pokemon.href)">
+  </div>
+</div>
+<div class="alert alert-success" role="alert" ng-if="$ctrl.removed">
+  <p>El pokemon ha sido eliminado correctamente</p>
+</div>
+<a href="/#/home" type="button" class="btn btn-default">Volver</a>

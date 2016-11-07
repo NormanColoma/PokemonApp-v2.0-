@@ -1,0 +1,23 @@
+{
+  "name": "angular1.5-todo",
+  "version": "1.0.0",
+  "description": "Simple project for testing Angular 1.5 ",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server -c configs/bs-config.json",
+    "test": "test"
+  },
+  "author": "Norman Coloma",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-router": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "lite-server": "^2.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

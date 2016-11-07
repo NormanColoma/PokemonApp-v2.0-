@@ -1,0 +1,9 @@
+<div class="main-list">
+    <div class="list-group">
+        <a href="#/pokemon/{{$ctrl.extractId(pokemon)}}" ng-repeat="pokemon in $ctrl.pokemons" class="list-group-item" ng-click="$ctrl.selectPokemon(pokemon)">
+            <h4 class="list-group-item-heading">{{pokemon.name}}</h4>
+            <p class="list-group-item-text">{{pokemon.description}}</p>
+        </a>
+    </div>
+    <a href="/#/pokemons/new" type="button" class="btn btn-default">Añadir Pokemon</a>
+</div>
